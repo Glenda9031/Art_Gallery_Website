@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;500;900&family=Outfit:wght@200;300;500&display=swap');
+
+:root {
+    /* colors */
+    --clr-brown: #D5966C;
+    --clr-black: #151515;
+    --clr-gray: 0 0% 26.67%;
+    --clr-white: #fff;
+
+    /*font-sizes */
+    --fs-700: 6rem;
+    --fs-600: 4.375rem;
+    --fs-500: 3.75rem;
+    --fs-450: 3.125rem;
+    --fs-400: 2.25rem;
+    --fs-375: 2rem;
+    --fs-350: 1.5rem;
+    --fs-300: 3.375rem;
+    --fs-200: 1.125rem;
+    --fs-100: 1rem;
+
+    /* line-spaing */
+    --ls-600: 5.5rem;
+    --ls-500: 4.375rem;
+    --ls-400: 3.125rem;
+    --ls-300: 2.25rem;
+    --ls-200: 2rem;
+    --ls-100: 1.75rem;
+
+    /* font-families */
+    --ff-outfit: 'Outfit', sans-serif;
+    --ff-big50: 'Big Shoulders Display', cursive;
+}
+
