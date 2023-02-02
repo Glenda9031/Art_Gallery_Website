@@ -29,6 +29,228 @@
 
     /* font-families */
     --ff-outfit: 'Outfit', sans-serif;
-    --ff-big50: 'Big Shoulders Display', cursive;
+    --ff-bigSD: 'Big Shoulders Display', cursive;
 }
+
+/* ------------------------------- */
+/* Reset                           */
+/* ------------------------------- */
+
+/* box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+section,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight:300;
+}
+
+/* set-up the body */
+body {
+    font-family: var(--ff-bigSD);
+    line-height: 1.5;
+    min-height: 100vh;
+    font-size: var(--fs-100);
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animatios for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+   }
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+2    margin-top: var(--flow-space, 1rem);
+}
+
+.container {
+    padding-bottom: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.main-container {
+    margin-inline: auto;
+    margin-top: 6em;
+    margin-bottom: 7em;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0);
+    white-space: nowrap; /*added line */
+    border: 0;
+}
+
+/* colors */
+
+.bg-accent {
+    background-color: var(--clr-brown);
+}
+
+.bg-dark {
+    background-color: var(--clr-black);
+}
+
+.bg-gray {
+    background-color: var(--clr-gray);
+}
+
+.bg-white {
+    background-color: var(--clr-white);
+}
+
+.text-dark {
+    color: var(--clr-black);
+}
+
+.text-accent {
+    color: var(--clr-brown);
+}
+
+.text-white {
+    color: var(--clr-white);
+}
+
+.text-gray {
+    color: var(--clr-gray);
+}
+
+/*typography */
+
+.ff-BSBD {
+    font-family: var(--ff-bigSD);
+}
+
+.ff-outfit-light {
+    font-family: var(--ff-outfit);
+}
+
+.uppercase {
+    text-transform: uppercaase;
+}
+
+.fs-700 {
+    font-size: var(--fs-700);
+}
+
+.fs-600 {
+    font-size: var(--fs-600);
+}
+
+.fs-500 {
+    font-size: var(--fs-500);
+}
+
+.fs-450 {
+    font-size: var(--fs-450);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.fs-375 {
+    font-size: var(--fs-375);
+}
+
+.fs-700 {
+    font-size: var(--fs-350);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-200 {
+    font-size: var(--fs-200);
+}
+
+.fs-100 {
+    font-size: var(--fs-100);
+}
+
+.fs-300 {
+    font-weight: var(--fs-300);
+}
+
+.fs-500 {
+    font-weight: var(--fs-500);
+}
+
+.fs-900 {
+    font-weight: var(--fs-900);
+}
+
+.ls-100 {
+    line-height: var(--ls-100);
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
 
