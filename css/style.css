@@ -350,3 +350,125 @@ select {
     }
 }
 
+@mmedia screen and (min-width: 900px) {
+
+    .main-grid {
+        grid-template-columns 2fr .8fr 1fr;
+        grid-template-rows: 1fr min-content .8fr;
+        width: 80%;
+        gap: 1.5rem;
+        max-width 1200px;
+    }
+
+    .galleryDay-text {
+        width: 100%;
+        padding: 5em 0 0 0;
+        justify-self: start;
+    }
+
+    .galleryDay-text h2 {
+        font-size: var(--fs-350);
+        width: 350px;
+    }
+
+    .galleryDay-text p {
+        font-size: var(--fs-500);
+        line-height: 1.5;
+        font-weight: 200;
+        width: 375px;
+    }
+
+    .main-headings span {
+        display: inline;
+    }
+
+    .grid-item2 {
+        content: url('assets/desktop/image-grid-1.jpg');
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-item3 {
+        content: url('assets/desktop/image-grid-2.jpg');
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-item4 {
+        content: url('assets/desktop/image-grid-3.jpg');
+    }
+
+    .bottom-grid-text {
+        width: 100%;
+        padding: 0 2.5em;
+    }
+
+    .bottom-grid-text h2 {
+        width: 250px;
+        font-size: var(--fs-500);
+    }
+
+    .bottom-grid-text p {
+        font-size: var(--fs-300);
+        line-height: 1.5;
+        font-weight: 0 2.5em;
+    }
+}
+
+.banner {
+    justify-content: space-between;
+    padding: 3em 6em
+}
+
+.p-text {
+    padding-bottom: 1.5em;
+}
+
+.p-text-top {
+    padding-top: 1.5em.
+}
+
+/* Gives a bit of padding on the sides for the tiny mobie screen sizes */
+
+@media screen and (max-width: 365px) {
+
+    .ain-container,
+    .hero-content {
+        padding-inline 1em;
+    }
+}
+
+@media screen and {
+
+    .banner {
+        padding: 1.5em 2em;
+    }
+
+    .banner p {
+        line-height: 2 !important;
+        text-align: center;
+    }
+
+    #btn-container {
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .banner {
+        padding: 1.5em 2em;
+    }
+
+    .banner p {
+        line-height: 2 !important;
+        text-align: center;
+    }
+
+    #btn-container {
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+}
+
