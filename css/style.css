@@ -472,3 +472,40 @@ select {
     }
 }
 
+@media screen and (max-width: 600px) {
+
+    .banner {
+        padding: 1.5em 2em;
+    }
+
+    .banner p {
+        line-height: 2 !important;
+        text-align: center;
+    }
+
+    #btn-container {
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    #typography-content {
+        flex-direction: column;
+    }
+
+    #typography-2nd-div {
+        margi-top: 3rem;
+    }
+}
+
+/* Hero Section */
+
+.large-content {
+    padding-top: 2em;
+    max-width: 343px;
+    margin: 0 auto;
+}
+
+/* 
