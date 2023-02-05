@@ -4,7 +4,7 @@
     /* colors */
     --clr-brown: #D5966C;
     --clr-black: #151515;
-    --clr-gray: 0 0% 26.67%;
+    --clr-gray: #808080;
     --clr-white: #fff;
 
     /*font-sizes */
@@ -15,7 +15,7 @@
     --fs-400: 2.25rem;
     --fs-375: 2rem;
     --fs-350: 1.5rem;
-    --fs-300: 3.375rem;
+    --fs-300: 1.375rem;
     --fs-200: 1.125rem;
     --fs-100: 1rem;
 
@@ -64,7 +64,7 @@ h4,
 h5,
 h6,
 p {
-    font-weight:300;
+    font-weight: 300;
 }
 
 /* set-up the body */
@@ -92,6 +92,7 @@ select {
 
 /* remove animatios for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
+
     *,
     *::before,
     *::after {
@@ -119,11 +120,11 @@ select {
 }
 
 .flow > *:where(:not(:first-child)) {
-2    margin-top: var(--flow-space, 1rem);
+    margin-top: var(--flow-space, 1rem);
 }
 
 .container {
-    padding-bottom: 2em;
+    padding-inline: 2em;
     margin-inline: auto;
     max-width: 80rem;
 }
@@ -141,7 +142,7 @@ select {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0);
+    clip: rect(0, 0, 0, 0);
     white-space: nowrap; /*added line */
     border: 0;
 }
@@ -182,7 +183,7 @@ select {
 
 /*typography */
 
-.ff-BSBD {
+.ff-BSDB {
     font-family: var(--ff-bigSD);
 }
 
@@ -218,7 +219,7 @@ select {
     font-size: var(--fs-375);
 }
 
-.fs-700 {
+.fs-350 {
     font-size: var(--fs-350);
 }
 
@@ -234,16 +235,16 @@ select {
     font-size: var(--fs-100);
 }
 
-.fs-300 {
-    font-weight: var(--fs-300);
+.fw-300 {
+    font-weight: 300;
 }
 
-.fs-500 {
-    font-weight: var(--fs-500);
+.fw-500 {
+    font-weight: 500;
 }
 
-.fs-900 {
-    font-weight: var(--fs-900);
+.fw-900 {
+    font-weight: 900;
 }
 
 .ls-100 {
@@ -290,6 +291,7 @@ select {
 }
 
 @media screen and (min-width: 700px) {
+
     .main-grid {
         max-width: 90%;
         grid-template-columns: repeat(3, 1fr);
@@ -301,7 +303,7 @@ select {
     }
 
     .galleryDay-text {
-        padding: 1.5em 4e 0 0;
+        padding: 1.5em 4em 0 0;
         grid-column: 1/2;
         grid-row: 1/2;
         width: 200px;
@@ -367,12 +369,12 @@ select {
     }
 
     .galleryDay-text h2 {
-        font-size: var(--fs-350);
+        font-size: var(--fs-500);
         width: 350px;
     }
 
     .galleryDay-text p {
-        font-size: var(--fs-500);
+        font-size: var(--fs-350);
         line-height: 1.5;
         font-weight: 200;
         width: 375px;
@@ -732,14 +734,64 @@ footer p {
 
 .btn-1, 
 .btn-2 {
-    text-trasform: uppercase;
+    text-transform: uppercase;
     color: var(--clr-white);
     text-decoration: none;
     font-weight: 900;
     letter-spacing: 3.65px;
     position: relative;
     display: inline-block;
-    fnt-size: var(__)
+    font-size: var(--fs-200);
+    transition: 0.3s;
+}
+
+.btn-1 {
+    padding-left: 1.5em;
+    background-color: var(--clr-black);
+}
+
+.btn-2 {
+    padding-right: 1.5em;
+    background-color: var(--clr-black);
+}
+
+.btn-1 img,
+.btn-2 img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1.35em 1.3em;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.btn-1 img {
+    margin-left: 1.5em;
+    background-color: var(--clr-brown);
+}
+
+.btn-2 img {
+    margin-right: 1.5em;
+    background-color: var(--clr-brown);
+}
+
+.btn-2:hover img,
+.btn-2:focus img {
+    background-color: var(--clr-black);
+}
+
+.btn-2:hover,
+.btn-2:focus {
+    background-color: var(--clr-brown);
+}
+
+.btn-1:hover,
+.btn-1:focus {
+    background-color: var(--clr-brown);
+}
+
+.btn-1:hover img,
+.btn-1:focus img {
+    background-color: var(--clr-black);
 }
 
 
