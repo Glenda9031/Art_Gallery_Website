@@ -385,7 +385,7 @@ select {
     }
 
     .grid-item2 {
-        content: url('assets/desktop/image-grid-1.jpg');
+        content: url(imagess/desktop/image-grid-1.jpg');
         width: 100%;
         height: 100%;
     }
